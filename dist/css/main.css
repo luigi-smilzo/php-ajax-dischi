@@ -9,6 +9,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  padding: 120px 0;
+}
+
 .u-container {
   max-width: 980px;
   margin: 0 auto;
@@ -16,6 +20,18 @@ body {
 
 .u-flexRow {
   display: flex;
+}
+
+.u-flexWrap {
+  flex-wrap: wrap;
+}
+
+.u-justifyCtr {
+  justify-content: center;
+}
+
+.u-justifyArd {
+  justify-content: space-around;
 }
 
 .u-alignCtr {
@@ -28,4 +44,33 @@ header {
 }
 header img {
   height: 35px;
+}
+
+.Album-card {
+  background: #000;
+  flex-basis: 25%;
+  padding: 25px;
+  text-align: center;
+  height: 360px;
+  margin: 10px 0;
+}
+.Album-card img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+.Album-card h4 {
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.Album-card h5 {
+  font-size: 0.95em;
+  color: #bbb;
+  font-weight: 500;
+}
+.Album-card h6 {
+  font-size: 0.7em;
+  color: #bbb;
+  font-weight: 500;
 }

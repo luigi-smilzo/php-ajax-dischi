@@ -1,0 +1,24 @@
+.Album {
+    &-card {
+        background: #000;
+        flex-basis: 25%;
+        padding: 25px;
+        text-align: center;
+        height: 360px;
+        margin: 10px 0;
+        img {
+            width: 200px;
+            margin-bottom: 10px;
+        }
+        h4 {
+            @include label (1.2em, #fff, 500);
+            margin-bottom: 15px;
+        }
+        h5 {
+            @include label (.95em, $col-grey-medium, 500);
+        }
+        h6 {
+            @include label (.7em, $col-grey-medium, 500);
+        }
+    }
+}

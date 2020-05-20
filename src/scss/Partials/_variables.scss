@@ -1,0 +1,10 @@
+// Colors
+$col-grey-light: #ddd;
+$col-grey-medium: #bbb;
+
+// Mixins
+@mixin label ($size, $color, $weight) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+}

@@ -19,7 +19,7 @@ include __DIR__ . "/Partials/data/data.php"
     </header>
 
     <main>
-        <div class="Album u-flexRow u-alignCtr u-container">
+        <div class="Album u-flexRow u-justifyArd u-alignCtr u-flexWrap u-container">
             <?php foreach ($albumData as $data) : ?>
             <div class="Album-card">
                 <img src="<?php echo $data['poster_path']; ?>" alt="cover">

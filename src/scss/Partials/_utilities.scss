@@ -7,6 +7,18 @@
     display: flex;
 }
 
+.u-flexWrap {
+    flex-wrap: wrap;
+}
+
+.u-justifyCtr {
+    justify-content: center;
+}
+
+.u-justifyArd {
+    justify-content: space-around;
+}
+
 .u-alignCtr {
     align-items: center;
 }

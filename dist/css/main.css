@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  font-family: "Roboto", sans-serif;
+}
+
+.u-container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.u-flexRow {
+  display: flex;
+}
+
+.u-alignCtr {
+  align-items: center;
+}
+
+header {
+  padding: 10px;
+  background: #000;
+}
+header img {
+  height: 35px;
+}

@@ -7,6 +7,7 @@ include __DIR__ . "/Partials/data/data.php"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"> 
     <link rel="stylesheet" href="dist/css/main.css">
     <title>Document</title>
 </head>
@@ -18,7 +19,7 @@ include __DIR__ . "/Partials/data/data.php"
     </header>
 
     <main>
-        <div class="Album u-flex u-container">
+        <div class="Album u-flexRow u-alignCtr u-container">
             <?php foreach ($albumData as $data) : ?>
             <div class="Album-card">
                 <img src="<?php echo $data['poster_path']; ?>" alt="cover">

@@ -24,7 +24,7 @@
     <script id="AlbumTemplate" type="text/x-handlebars-template">
         <div class="Album-card">
             <img src="{{ posterPath }}" alt="{{ title }}">
-            <h4>{{ albumTitle }}</h4>
+            <h4>{{ title }}</h4>
             <h5>{{ artist }}</h5>
             <h6>{{ year }}</h6>
         </div>

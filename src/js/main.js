@@ -16,7 +16,7 @@ $(document).ready(function () {
 
                 var context = {
                     posterPath: album.poster_path,
-                    title: album.title,
+                    title: album.album_title,
                     artist: album.artist,
                     year: album.year
                 }

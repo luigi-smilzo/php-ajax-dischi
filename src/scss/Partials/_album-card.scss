@@ -13,6 +13,7 @@
         h4 {
             @include label (1.2em, #fff, 500);
             margin-bottom: 15px;
+            text-transform: capitalize;
         }
         h5 {
             @include label (.95em, $col-grey-medium, 500);

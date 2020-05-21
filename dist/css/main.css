@@ -92,6 +92,7 @@ header img {
   color: #fff;
   font-weight: 500;
   margin-bottom: 15px;
+  text-transform: capitalize;
 }
 .Album-card h5 {
   font-size: 0.95em;

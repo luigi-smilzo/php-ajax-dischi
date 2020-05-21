@@ -142,7 +142,7 @@ function albumLoad(container, template) {
 }
 
 function albumSearch(container, template, searchInput) {
-  var searchVal = searchInput.val().trim();
+  var searchVal = searchInput.val().trim().toLowerCase();
   $.ajax({
     url: 'http://localhost/php-ajax-dischi/partials/script/encode.php',
     method: 'GET',

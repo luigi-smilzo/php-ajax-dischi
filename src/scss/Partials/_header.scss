@@ -5,3 +5,30 @@ header {
         height: 35px;
     }
 }
+
+.SearchBar {
+    input {
+        height: 30px;
+        width: 300px;
+        padding: 0 20px;
+        border-radius: 15px;
+        border-style: none;
+        outline: none;
+        font-family: 'Roboto';
+        font-size: 1.2em;
+        line-height: 30px;
+        vertical-align: middle;
+    }
+    button {
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        border-style: none;
+        line-height: 30px;
+        font-size: .9em;
+        margin-left: 5px;
+        background: #7bd069;
+        color: #000;
+        cursor: pointer;
+    }
+}

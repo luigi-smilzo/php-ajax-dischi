@@ -99,6 +99,14 @@ $(document).ready(function () {
 
   var source = $('#AlbumTemplate').html();
   var template = Handlebars.compile(source);
+  albumLoad(container, template);
+}); // <- End ready
+
+/*************
+ * FUNCTIONS *
+ *************/
+
+function albumLoad(container, template) {
   $.ajax({
     url: 'http://localhost/php-ajax-dischi/partials/script/encode.php',
     method: 'GET',
@@ -119,7 +127,7 @@ $(document).ready(function () {
       console.log('Error');
     }
   });
-}); // <- End ready
+}
 
 /***/ }),
 

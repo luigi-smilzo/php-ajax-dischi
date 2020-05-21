@@ -1,7 +1,3 @@
-<?php 
-include __DIR__ . "/Partials/data/data.php"
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -9,7 +9,7 @@ include __DIR__ . "/Partials/data/data.php"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"> 
     <link rel="stylesheet" href="dist/css/main.css">
-    <title>Document</title>
+    <title>Albums php</title>
 </head>
 <body>
     <header>

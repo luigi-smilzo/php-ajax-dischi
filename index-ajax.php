@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"> 
     <link rel="stylesheet" href="dist/css/main.css">
-    <title>Document</title>
+    <title>Albums Ajax</title>
 </head>
 <body>
     <header>
@@ -34,7 +34,6 @@
             <h6>{{ year }}</h6>
         </div>
     </script>
-
 
     <!-- JS -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>

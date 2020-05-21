@@ -34,26 +34,22 @@ $(document).ready(function () {
 function albumLoad(container, template) {
     $.ajax({
         url: 'http://localhost/php-ajax-dischi/partials/script/encode.php',
-        method: 'GET',
-        success: function(res) {
-            for (var i = 0; i < res.length; i++) {
-                var album = res[i];
+        method: 'GET'
+    }).done(function(res) {
+        for (var i = 0; i < res.length; i++) {
+            var album = res[i];
 
-                var context = {
-                    posterPath: album.poster_path,
-                    title: album.album_title,
-                    artist: album.artist,
-                    year: album.year
-                }
-
-                var html = template(context);
-                container.append(html);
+            var context = {
+                posterPath: album.poster_path,
+                title: album.album_title,
+                artist: album.artist,
+                year: album.year
             }
-        },
-        error: function() {
-            console.log('Error');
+
+            var html = template(context);
+            container.append(html);
         }
-    });
+    }).fail( () => console.log('Error') );
 }
 
 function albumSearch (container, template, searchInput) {
@@ -61,40 +57,34 @@ function albumSearch (container, template, searchInput) {
 
     $.ajax({
         url: 'http://localhost/php-ajax-dischi/partials/script/encode.php',
-        method: 'GET',
-        success: function(res) {
-            container.html('');
+        method: 'GET'
+    }).done(function(res) {
+        container.html('');
+        
+        if (searchVal != '') {
             
-            if (searchVal != '') {
+            for (var i = 0; i < res.length; i++) {
                 
-                for (var i = 0; i < res.length; i++) {
+                if ( res[i].album_title == searchVal ) {
+                    var album = res[i];
                     
-                    
-                    if ( res[i].album_title == searchVal ) {
-                        var album = res[i];
-                        
-                        var context = {
-                            posterPath: album.poster_path,
-                            title: album.album_title,
-                            artist: album.artist,
-                            year: album.year
-                        }
-                        
-                        var html = template(context);
-                        container.append(html);
+                    var context = {
+                        posterPath: album.poster_path,
+                        title: album.album_title,
+                        artist: album.artist,
+                        year: album.year
                     }
-    
+                    
+                    var html = template(context);
+                    container.append(html);
                 }
-                
-                searchInput.val('').blur();
-            } else {
-                searchInput.focus()
-                container.append('Campo di ricerca vuoto')
             }
             
-        },
-        error: function() {
-            console.log('Error');
+            searchInput.val('').blur();
+
+        } else {
+            searchInput.focus()
+            container.append('Campo di ricerca vuoto')
         }
-    });
+    }).fail( () => console.log('Error') );
 }
